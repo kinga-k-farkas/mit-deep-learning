@@ -15,6 +15,21 @@ Links: \[ [Jupyter Notebook](https://github.com/lexfridman/mit-deep-learning/blo
 \[ [Lecture Video](https://www.youtube.com/watch?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf&v=O5xeyoRL95U) \]
 
 
+**Setup:**
+
+Install [Anaconda](https://www.anaconda.com/download/), create a fresh conda environment and install the following packages:
+
+> conda install tensorflow
+
+> conda install matplotlib
+
+> conda install seaborn
+
+> conda install opencv-python
+
+> conda install ipython
+
+
 ## Tutorial: Driving Scene Segmentation
 
 <a href="https://github.com/lexfridman/mit-deep-learning/blob/master/tutorial_driving_scene_segmentation/tutorial_driving_scene_segmentation.ipynb"><img src="images/thumb_driving_scene_segmentation.gif"></a>
@@ -23,6 +38,7 @@ This tutorial demostrates semantic segmentation with a state-of-the-art model (D
 
 Links: \[ [Jupyter Notebook](https://github.com/lexfridman/mit-deep-learning/blob/master/tutorial_driving_scene_segmentation/tutorial_driving_scene_segmentation.ipynb) \]
 \[ [Google Colab](https://colab.research.google.com/github/lexfridman/mit-deep-learning/blob/master/tutorial_driving_scene_segmentation/tutorial_driving_scene_segmentation.ipynb) \]
+
 
 ## DeepTraffic Deep Reinforcement Learning Competition
 
