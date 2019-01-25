@@ -2,7 +2,44 @@
 
 <a href="https://deeplearning.mit.edu/"><img src="https://deeplearning.mit.edu/files/images/mit_deep_learning.png"></a>
 
-This repository is a collection of tutorials for [MIT Deep Learning](https://deeplearning.mit.edu/) courses. More added as courses progress.
+This repository is a collection of tutorials for [MIT Deep Learning](https://deeplearning.mit.edu/) courses. 
+
+Expanded by loopuleasa for learning purposes.
+
+## Setup
+
+Install [Anaconda](https://www.anaconda.com/download/), create a fresh conda environment and install the following packages:
+
+For the basic tutorial:
+
+````
+conda install tensorflow
+conda install matplotlib
+conda install seaborn
+conda install opencv-python
+conda install ipython
+````
+
+For Jupyter notebooks
+
+````
+conda install jupyter
+conda install sympy
+````
+
+For driving segmentation tutorial:
+
+````
+conda install pillow
+conda install tqdm
+conda install scikit-learn
+conda install tabulate
+````
+
+To run jupyter notebooks, I recommend JetBrains IDE.
+
+Inside it, start a jupyter notebook server then open the link from the console in your browser.
+
 
 ## Tutorial: Deep Learning Basics
 
@@ -15,19 +52,7 @@ Links: \[ [Jupyter Notebook](https://github.com/lexfridman/mit-deep-learning/blo
 \[ [Lecture Video](https://www.youtube.com/watch?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf&v=O5xeyoRL95U) \]
 
 
-**Setup:**
 
-Install [Anaconda](https://www.anaconda.com/download/), create a fresh conda environment and install the following packages:
-
-> conda install tensorflow
-
-> conda install matplotlib
-
-> conda install seaborn
-
-> conda install opencv-python
-
-> conda install ipython
 
 
 ## Tutorial: Driving Scene Segmentation
