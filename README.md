@@ -10,6 +10,11 @@ Expanded by loopuleasa for learning purposes.
 
 Install [Anaconda](https://www.anaconda.com/download/), create a fresh conda environment and install the following packages:
 
+````
+conda create mit-env
+conda activate mit-env
+````
+
 For the basic tutorial:
 
 ````
@@ -18,13 +23,6 @@ conda install matplotlib
 conda install seaborn
 conda install opencv-python
 conda install ipython
-````
-
-For Jupyter notebooks
-
-````
-conda install jupyter
-conda install sympy
 ````
 
 For driving segmentation tutorial:
@@ -36,9 +34,41 @@ conda install scikit-learn
 conda install tabulate
 ````
 
-To run jupyter notebooks, I recommend JetBrains IDE.
+Install Jupyter notebooks
 
-Inside it, start a jupyter notebook server then open the link from the console in your browser.
+````
+conda config --add channels conda-forge
+conda install jupyter
+conda install sympy
+conda install jupytext
+````
+
+Setup [Jupytext](https://github.com/mwouts/jupytext)
+````
+jupyter notebook --generate-config
+````
+then open up the generated ``jupyter_notebook_config.py`` and append the following
+````
+c.NotebookApp.contents_manager_class = "jupytext.TextFileContentsManager"
+c.ContentsManager.default_jupytext_formats = "ipynb,py"
+c.ContentsManager.preferred_jupytext_formats_save = "py:percent"
+````
+
+Now all jupyter notebooks are jupytext compatible and can be changed directly from the ``.py`` files, while the ``.ipynb`` files are synchronised on the fly.
+
+To run jupyter notebooks simply use the following command to launch the server:
+
+````
+jupyter notebook
+````
+
+
+If you want to create new jupytext notebooks, use the command:
+
+````
+jupytext --to pypython <notebook.ipynb>
+jupytext --to notebook <jupytext_notebook>  
+````
 
 
 ## Tutorial: Deep Learning Basics
