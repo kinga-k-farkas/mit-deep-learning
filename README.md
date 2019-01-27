@@ -54,7 +54,7 @@ c.ContentsManager.default_jupytext_formats = "ipynb,py"
 c.ContentsManager.preferred_jupytext_formats_save = "py:percent"
 ````
 
-Now all jupyter notebooks are jupytext compatible and can be changed directly from the ``.py`` files, while the ``.ipynb`` files are synchronised on the fly.
+Now all jupyter notebooks are jupytext compatible and can be changed directly from the ``.py`` files, while the ``.ipynb`` files are synchronised on the fly when page is refreshed.
 
 To run jupyter notebooks simply use the following command to launch the server:
 
@@ -63,10 +63,13 @@ jupyter notebook
 ````
 
 
-If you want to create new jupytext notebooks, use the command:
+If you want to create new jupytext notebooks, use the commands:
 
 ````
-jupytext --to pypython <notebook.ipynb>
+#convert a jupyter notebook to python
+jupytext --to py:percent <notebook.ipynb>
+
+#convert any jupytext notebook (.py, .md, etc.) back to a .ipynb  
 jupytext --to notebook <jupytext_notebook>  
 ````
 
