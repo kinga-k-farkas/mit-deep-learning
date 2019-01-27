@@ -13,7 +13,7 @@
 #     name: python3
 # ---
 
-# %% {"colab_type": "text", "id": "dvefM1LtKLST"}
+# %% [markdown] {"colab_type": "text", "id": "dvefM1LtKLST"}
 # ![MIT Deep Learning](https://deeplearning.mit.edu/files/images/github/mit_deep_learning.png)
 
 # %% [markdown] {"colab_type": "text", "id": "Mv9KQHwAKLSV"}
